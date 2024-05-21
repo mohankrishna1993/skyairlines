@@ -1,0 +1,53 @@
+
+<app-top-navbar></app-top-navbar>
+<mat-toolbar style="background-color: #736F6E;">
+  <button mat-icon-button class="menu-button" (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="menu-text">
+    <mat-icon>admin_panel_settings</mat-icon>
+    <span class="toolbar-text">Admin</span>
+  </span>
+  <span class="spacer"></span>
+  <span class="menu-text">
+    <mat-icon>supervisor_account</mat-icon>
+    <span class="toolbar-text">Masters</span>
+  </span>
+  <span class="spacer"></span>
+  <span class="menu-text">
+    <mat-icon>event</mat-icon>
+    <span class="toolbar-text">Activities</span>
+  </span>
+  <span class="spacer"></span>
+  <span class="menu-text">
+    <mat-icon>dashboard</mat-icon>
+    <span class="toolbar-text">Dashboard</span>
+  </span>
+  <span class="spacer"></span>
+  <span class="menu-text">
+    <mat-icon>account_balance</mat-icon>
+    <span class="toolbar-text">Accounting</span>
+  </span>
+  <span class="spacer"></span>
+  <span class="menu-text">
+    <mat-icon>receipt</mat-icon>
+    <span class="toolbar-text">Miscellaneous Billing</span>
+  </span>
+  <span class="spacer"></span>
+  <span class="menu-text">
+    <mat-icon>bar_chart</mat-icon>
+    <span class="toolbar-text">Reports</span>
+  </span>
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" opened>
+    <app-side-navbar></app-side-navbar>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-main-content></app-main-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+

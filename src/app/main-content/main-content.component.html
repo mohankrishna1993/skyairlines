@@ -1,0 +1,27 @@
+
+<div class="breadcrumb">
+  <span>Home</span>
+  <span> > </span>
+  <span>Optional Dashboard</span>
+  <span> > </span>
+  <span class="active">Input Output Dashboard</span>
+</div>
+
+<div class="tabs-boader">
+<nav mat-tab-nav-bar>
+  <a mat-tab-link
+     *ngFor="let link of navLinks"
+     [routerLink]="link.path"
+     routerLinkActive="active-link"
+     [routerLinkActiveOptions]="{ exact: true }">
+    {{link.label}}
+  </a>
+</nav>
+
+<router-outlet></router-outlet>
+<!-- <app-bar-chart></app-bar-chart> -->
+</div>
+
+
+
+

@@ -1,0 +1,76 @@
+
+<div class="card-container">
+  <mat-card class="stat-card">
+    <div class="card-row">
+      <span>Message Received</span>
+      <div class="percentage-box">100%</div>
+    </div>
+    <hr />
+    <div class="card-row">
+
+      <span>1,233,032</span>
+    </div>
+  </mat-card>
+  <mat-card class="stat-card">
+    <div class="card-row">
+      <span>Message Interfaced</span>
+      <div class="percentage-box">100%</div>
+    </div>
+    <hr />
+    <div class="card-row">
+
+      <span>1,233,032</span>
+    </div>
+  </mat-card>
+  <mat-card class="stat-card">
+    <div class="card-row">
+      <span>Messages Failed..</span>
+      <div class="percentage-box" style="background-color: #fd6768;">0%</div>
+    </div>
+    <hr />
+    <div class="card-row">
+
+      <span>0</span>
+    </div>
+  </mat-card>
+  <mat-card class="stat-card">
+    <div class="card-row">
+      <span>Messages Inprogress</span>
+      <div class="percentage-box" style="background-color: #f99322;">100%</div>
+    </div>
+    <hr />
+    <div class="card-row">
+
+      <span>924,774</span>
+    </div>
+  </mat-card>
+  <mat-card class="stat-card">
+    <div class="card-row">
+      <span>Accounted</span>
+      <div class="percentage-box" style="background-color: #efab04;">25%</div>
+    </div>
+    <hr />
+    <div class="card-row">
+
+      <span>308,258</span>
+    </div>
+  </mat-card>
+</div>
+
+<div style="height: 400px">
+  <ngx-charts-bar-horizontal
+    [view]="barChartSettings.view"
+    [scheme]="barChartSettings.colorScheme"
+    [results]="barChartData"
+    [gradient]="barChartSettings.gradient"
+    [xAxis]="barChartSettings.showXAxis"
+    [yAxis]="barChartSettings.showYAxis"
+    [legend]="barChartSettings.showLegend"
+    [showXAxisLabel]="barChartSettings.showXAxisLabel"
+    [showYAxisLabel]="barChartSettings.showYAxisLabel"
+    [xAxisLabel]="barChartSettings.xAxisLabel"
+    [yAxisLabel]="barChartSettings.yAxisLabel"
+    [showDataLabel]="barChartSettings.showDataLabel"
+  >
+  </ngx-charts-bar-horizontal>
+</div>

@@ -1,0 +1,23 @@
+
+
+<mat-expansion-panel
+  (opened)="panelOpenState = true"
+  (closed)="panelOpenState = false"
+  MatAccordionTogglePosition="'before'"
+>
+  <mat-expansion-panel-header>
+    <mat-panel-title> XML File Messages </mat-panel-title>
+  </mat-expansion-panel-header>
+  <nav mat-tab-nav-bar>
+    <a
+      mat-tab-link
+      *ngFor="let link of navLinks"
+      [routerLink]="link.path"
+      routerLinkActive="active-link"
+    >
+      {{ link.label }}
+    </a>
+  </nav>
+  <router-outlet></router-outlet>
+
+</mat-expansion-panel>

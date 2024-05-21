@@ -1,0 +1,35 @@
+
+.example-container {
+  height: 100%;
+}
+
+.mat-toolbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu-button {
+  margin-right: 16px;
+}
+
+.menu-text {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.toolbar-text {
+  margin-left: 8px;
+  color: #FFFEFF;
+}
+
+.mat-toolbar mat-icon {
+  color: #FFFEFF;
+}
+
+.spacer {
+  flex: 1;
+}
+
+

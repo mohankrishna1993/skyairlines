@@ -1,0 +1,96 @@
+
+<div class="container">
+  <div class="left-side">
+    <div class="card">
+      <div class="card-body">
+        <div class="radio-group">
+          <div class="radio-item">
+            <input
+              type="radio"
+              id="monthYear"
+              name="selectionType"
+              value="monthYear"
+              [(ngModel)]="selectedType"
+            />
+            <label for="monthYear">Month / Year</label>
+          </div>
+          <div class="radio-item">
+            <input
+              type="radio"
+              id="dateRange"
+              name="selectionType"
+              value="dateRange"
+              [(ngModel)]="selectedType"
+            />
+            <label for="dateRange">From Date / To Date</label>
+          </div>
+        </div>
+        <hr class="radio-divider" />
+
+        <div *ngIf="selectedType === 'monthYear'" class="form-group">
+          <div class="row">
+            <div class="col">
+              <label for="month">Month <span class="required">*</span></label>
+              <input type="text" id="month" class="form-control small-input" />
+            </div>
+            <div class="col">
+              <label for="year">Year <span class="required">*</span></label>
+              <input type="text" id="year" class="form-control small-input" />
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="selectedType === 'dateRange'" class="form-group">
+          <label for="fromDate">From <span class="required">*</span></label>
+          <input type="text" id="fromDate" class="form-control" />
+          <label for="toDate">To <span class="required">*</span></label>
+          <input type="text" id="toDate" class="form-control" />
+        </div>
+
+        <div class="radio-group">
+          <div class="radio-item">
+            <input type="radio" id="testFile" name="fileType" value="test" />
+            <label for="testFile">Test File</label>
+          </div>
+          <div class="radio-item">
+            <input type="radio" id="xmlMessages" name="fileType" value="xml" />
+            <label for="xmlMessages">XML Messages</label>
+          </div>
+        </div>
+
+        <div>
+          <p class="display-heading">
+            Display <span class="required">*</span>
+          </p>
+          <hr />
+          <input type="radio" id="grid" name="displayType" value="grid" />
+          <label for="grid">Grid</label>
+        </div>
+
+        <button class="search-button">Search</button>
+      </div>
+    </div>
+  </div>
+  <div class="right-side">
+    <div class="file-status-container">
+      <h4>Flie status</h4>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Stages</th>
+          <th>Sales</th>
+          <th>Flown</th>
+          <th>Interline</th>
+          <th>Miscellaneous</th>
+          <th>Reference data</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+<app-bar-chart></app-bar-chart>

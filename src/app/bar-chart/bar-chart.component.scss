@@ -1,0 +1,37 @@
+mat-panel-title {
+  border: 1px solid #ccc;
+  margin: 4px;
+  padding: 8px;
+  margin-bottom: 10px;
+  color: #732d4f;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.file-status-container h4 {
+  margin-bottom: 5px;
+
+}
+
+nav {
+  margin: 6px;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #5C0633;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px;
+  margin-right: 8px;
+
+  &:hover {
+    background-color: #F5F5F5;
+  }
+}
+
