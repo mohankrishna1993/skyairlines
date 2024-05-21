@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ScaleType } from '@swimlane/ngx-charts';
+import * as L from 'leaflet';
 
 @Component({
   selector: 'app-osinad-messages',
@@ -7,6 +8,12 @@ import { ScaleType } from '@swimlane/ngx-charts';
   styleUrls: ['./osinad-messages.component.scss']
 })
 export class OsinadMessagesComponent {
+
+  // map: any;
+
+  ngOnInit() {
+    // this.initMap();
+  }
 
   barChartData = [
     { name: 'United kindoms', value: 32997 },
@@ -37,5 +44,12 @@ export class OsinadMessagesComponent {
       domain:  ["rgb(0, 0, 255)"]
     }
   };
+
+  // initMap() {
+  //   this.map = L.map('map').setView([51.505, -0.09], 13);
+  //   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  //     attribution: '&copy; OpenStreetMap contributors'
+  //   }).addTo(this.map);
+  // }
 
 }

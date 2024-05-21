@@ -57,20 +57,56 @@
   </mat-card>
 </div>
 
-<div style="height: 400px">
-  <ngx-charts-bar-horizontal
-    [view]="barChartSettings.view"
-    [scheme]="barChartSettings.colorScheme"
-    [results]="barChartData"
-    [gradient]="barChartSettings.gradient"
-    [xAxis]="barChartSettings.showXAxis"
-    [yAxis]="barChartSettings.showYAxis"
-    [legend]="barChartSettings.showLegend"
-    [showXAxisLabel]="barChartSettings.showXAxisLabel"
-    [showYAxisLabel]="barChartSettings.showYAxisLabel"
-    [xAxisLabel]="barChartSettings.xAxisLabel"
-    [yAxisLabel]="barChartSettings.yAxisLabel"
-    [showDataLabel]="barChartSettings.showDataLabel"
-  >
-  </ngx-charts-bar-horizontal>
+<!-- <div class="chart-container">
+  <div style="height: 400px">
+    <ngx-charts-bar-horizontal
+      [view]="barChartSettings.view"
+      [scheme]="barChartSettings.colorScheme"
+      [results]="barChartData"
+      [gradient]="barChartSettings.gradient"
+      [xAxis]="barChartSettings.showXAxis"
+      [yAxis]="barChartSettings.showYAxis"
+      [legend]="barChartSettings.showLegend"
+      [showXAxisLabel]="barChartSettings.showXAxisLabel"
+      [showYAxisLabel]="barChartSettings.showYAxisLabel"
+      [xAxisLabel]="barChartSettings.xAxisLabel"
+      [yAxisLabel]="barChartSettings.yAxisLabel"
+      [showDataLabel]="barChartSettings.showDataLabel"
+    >
+    </ngx-charts-bar-horizontal>
+  </div>
+  <div class="map-details">
+     <h1>Map Image</h1>
+  </div>
+</div> -->
+
+<div class="chart-map-container">
+  <div class="chart-container">
+    <div>
+      <h2>Top Countries & Volume</h2>
+    </div>
+
+    <ngx-charts-bar-horizontal
+      [view]="barChartSettings.view"
+      [scheme]="barChartSettings.colorScheme"
+      [results]="barChartData"
+      [gradient]="barChartSettings.gradient"
+      [xAxis]="barChartSettings.showXAxis"
+      [yAxis]="barChartSettings.showYAxis"
+      [legend]="barChartSettings.showLegend"
+      [showXAxisLabel]="barChartSettings.showXAxisLabel"
+      [showYAxisLabel]="barChartSettings.showYAxisLabel"
+      [xAxisLabel]="barChartSettings.xAxisLabel"
+      [yAxisLabel]="barChartSettings.yAxisLabel"
+      [showDataLabel]="barChartSettings.showDataLabel"
+    >
+    </ngx-charts-bar-horizontal>
+  </div>
+  <div class="map-container">
+    <img src="../../assets/map.jpg" alt="Map Image">
+  </div>
 </div>
+
+
+
+
